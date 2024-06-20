@@ -87,15 +87,3 @@ class Lecturer(Person):
             'postgraduate_students': self.post_grad,
             'borrowed_books': self.borrowed_books
         }
-
-# Example
-lecturer = Lecturer('Dr. John Doe', 45, '070101010', 'Room 123')
-lecturer.add_module('Artificial Intelligence')
-lecturer.add_post_grad('Alice Johnson')
-
-# Borrowing and returning books
-lecturer.borrow_book('Introduction to Machine Learning', date(2024, 7, 1))
-lecturer.borrow_book('Advanced Data Science', date(2024, 8, 15))
-lecturer.return_book('Introduction to Machine Learning')
-
-
